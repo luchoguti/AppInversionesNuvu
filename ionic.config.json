@@ -1,0 +1,7 @@
+{
+  "name": "pruebaAppInversionesNuvu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
