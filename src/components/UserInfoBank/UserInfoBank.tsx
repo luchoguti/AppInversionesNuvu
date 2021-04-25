@@ -15,7 +15,7 @@ const UserInfoBank = () => {
                     <span>Hola {DataComponent.name_user}</span>
                 </div>
                 <div>
-                    <IonIcon icon={personCircle} />
+                    <img src="/assets/icon/notifications.svg"/>
                 </div>
             </div>
             <div className="invest_card">
@@ -55,3 +55,4 @@ const UserInfoBank = () => {
     )
 }
 export default UserInfoBank;
+
