@@ -1,6 +1,5 @@
 import './MenuContainer.css';
 import React from "react";
-import {IonBadge, IonIcon, IonLabel, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { Link } from 'react-router-dom';
 
 interface ContainerProps { }
