@@ -1,0 +1,40 @@
+{
+  "tip_saving": [
+    {
+      "url_video": "https://www.youtube.com/watch?v=edtCbuCARn8",
+      "img": "/assets/icon/saving.png",
+      "title": "Esto es Ahorro",
+      "details": "Conoce como nuestros RoboAdvisor Crear el mejor portafolio de inversión para ti."
+    },
+    {
+      "url_video": "https://www.youtube.com/watch?v=OxjX4iRlmF0",
+      "img": "/assets/icon/saving_two.png",
+      "title": "Esto es Ahorro 2",
+      "details": "Conoce como nuestros RoboAdvisor Crear el mejor portafolio de inversión para ti."
+    },
+    {
+      "url_video": "https://www.youtube.com/watch?v=nux8bxgXjTY",
+      "img": "/assets/icon/saving_two.png",
+      "title": "Esto es Ahorro 3",
+      "details": "Conoce como nuestros RoboAdvisor Crear el mejor portafolio de inversión para ti."
+    }
+  ],
+  "list_tips_specific": [
+    {
+      "title": "10 gastos que debes evitar",
+      "detail": "Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera formal",
+      "img": "/assets/icon/money_tips.png"
+    },
+    {
+      "title": "10 gastos que debes evitar",
+      "detail": "Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera formal",
+      "img": "/assets/icon/hands_tips.png"
+    },
+    {
+      "title": "10 gastos que debes evitar",
+      "detail": "Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera formal",
+      "img": "/assets/icon/credit_cart_tips.png"
+    }
+  ]
+}
+

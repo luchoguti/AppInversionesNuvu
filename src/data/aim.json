@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Viajes a Islas Canarias",
+    "icon": "/assets/icon/palmera.svg",
+    "value_aim": "1630000",
+    "value_aim_percentage": "8000000"
+  },
+  {
+    "title": "Macbook Pro",
+    "icon": "/assets/icon/macbook.svg",
+    "value_aim": "1630000",
+    "value_aim_percentage": "8000000"
+  },
+  {
+    "title": "Viajes a Islas Canarias",
+    "icon": "/assets/icon/palmera.svg",
+    "value_aim": "1630000",
+    "value_aim_percentage": "8000000"
+  },
+  {
+    "title": "Macbook Pro",
+    "icon": "/assets/icon/macbook.svg",
+    "value_aim": "1630000"
+  }
+]
