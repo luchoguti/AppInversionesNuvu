@@ -1,27 +1,36 @@
 import './UseInfoBank.css';
 import DataComponent from "../../data/information_bank.json";
 import React from "react";
+import {IonIcon, IonItem, IonItemSliding, IonLabel, IonList} from "@ionic/react";
+import {personCircle} from "ionicons/icons";
 
-interface ContainerProps { }
-
-const UserInfoBank: React.FC<ContainerProps> = () => {
+const formatNumber = (num:any) =>{
+    return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
+}
+const UserInfoBank = () => {
     return (
         <section>
-            <div>
+            <div className="title_user">
                 <div>
-                    Hola {DataComponent.name_user}
+                    <span>Hola {DataComponent.name_user}</span>
                 </div>
                 <div>
-
+                    <IonIcon icon={personCircle} />
                 </div>
             </div>
             <div className="invest_card">
-                <p>
-                    Tu salado
-                </p>
-                <p>
-                    ${DataComponent.balance}
-                </p>
+                <aside>
+                    <span>Eres estratega</span>
+                    <img src="/assets/icon/invest_card.png"/>
+                    </aside>
+                <aside>
+                    <p>
+                        Tu saldo
+                    </p>
+                    <p id="invest_card_balance">
+                        ${formatNumber(DataComponent.balance)}
+                    </p>
+                </aside>
             </div>
             <div className="invest_summer">
                 <li>
@@ -29,7 +38,8 @@ const UserInfoBank: React.FC<ContainerProps> = () => {
                         Inversión
                     </div>
                     <div>
-                        ${DataComponent.investment}
+                        <b>${formatNumber(DataComponent.investment)}</b>
+
                     </div>
                 </li>
                 <li>
@@ -37,7 +47,7 @@ const UserInfoBank: React.FC<ContainerProps> = () => {
                         Rendimiento
                     </div>
                     <div>
-                        ${DataComponent.performance}
+                        <b>${formatNumber(DataComponent.performance)}</b>
                     </div>
                 </li>
             </div>
