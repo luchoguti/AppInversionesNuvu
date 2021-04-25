@@ -3,6 +3,7 @@ import './Home.css';
 import MenuContainer from "../components/Menu/MenuContainer";
 import React from "react";
 import UserInfoBank from "../components/UserInfoBank/UserInfoBank";
+import Aim from "../components/Aim/Aim";
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <IonContent color="dark">
           <UserInfoBank/>
           <MenuContainer />
+          <Aim/>
       </IonContent>
     </IonPage>
   );

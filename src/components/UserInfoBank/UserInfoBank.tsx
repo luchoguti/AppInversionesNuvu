@@ -1,8 +1,6 @@
 import './UseInfoBank.css';
 import DataComponent from "../../data/information_bank.json";
 import React from "react";
-import {IonIcon, IonItem, IonItemSliding, IonLabel, IonList} from "@ionic/react";
-import {personCircle} from "ionicons/icons";
 
 const formatNumber = (num:any) =>{
     return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
