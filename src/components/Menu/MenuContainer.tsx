@@ -1,6 +1,7 @@
 import './MenuContainer.css';
 import React from "react";
 import {IonBadge, IonIcon, IonLabel, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
+import { Link } from 'react-router-dom';
 
 interface ContainerProps { }
 
@@ -9,30 +10,28 @@ const MenuContainer: React.FC<ContainerProps> = () => {
     <div className="menu">
         <div className="rectangle_container">
             <div className="menu_options">
-                <a>
-                    <img src="/assets/icon/home.svg" className="icon" />
+                <Link to="/home">
+                    <img src="/assets/icon/home.svg"/>
                     <label className="label_active">Inicio</label>
-                </a>
-                <a>
-                    <img src="/assets/icon/history.svg" className="icon" />
+                </Link>
+                <Link  to="/home">
+                    <img src="/assets/icon/history.svg" />
                     <label>Historial</label>
-                </a>
-                <a>
+                </Link>
+                <Link to="/home">
                     <div className="ellipse_container">
-                        <a>
-                            <img className="menu_invest" src="/assets/icon/save_up.svg"/>
-                        </a>
+                        <img className="menu_invest" src="/assets/icon/save_up.svg"/>
                     </div>
                     <label>Ahorrar</label>
-                </a>
-                <a>
-                    <img src="/assets/icon/account.svg" className="icon" />
+                </Link>
+                <Link  to="/home">
+                    <img src="/assets/icon/account.svg"/>
                     <label>Mi Perfil</label>
-                </a>
-                <a>
-                    <img src="/assets/icon/more.svg" className="icon" />
+                </Link>
+                <Link  to="/home">
+                    <img src="/assets/icon/more.svg"/>
                     <label>Más</label>
-                </a>
+                </Link>
             </div>
         </div>
     </div>
