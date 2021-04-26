@@ -10,6 +10,7 @@
     bottom: 23px;
     border-radius: 16px;
     background-color: white;
+    z-index: 1;
 }
 .ellipse_container{
     position: fixed;

@@ -2,3 +2,12 @@
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
 }
+section{
+    color: black;
+    padding: 17px;
+}
+.title_user, .title_aim{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 32px 0;
+}
