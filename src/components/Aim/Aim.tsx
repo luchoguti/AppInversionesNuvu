@@ -34,7 +34,7 @@ const Aim = () =>{
                                             'rgba(84, 209, 237, 1)',
                                             'rgba(250, 249, 253, 1)',
                                         ],
-                                        borderWidth: 0,
+                                        borderWidth: 0
                                     },
                                 ],
                                 options: {

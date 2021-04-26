@@ -11,6 +11,22 @@ const BriefCase = () =>{
         initialSlide: 1,
         speed: 400
     };
+    let options_graphic = {
+        responsive: false,
+        tooltips: {
+            yAlign: 'top'
+        },
+        cutout : 50,
+        maintainAspectRatio: true
+    }
+    const onPrevSlide = () => {
+        const htmlslides = document.querySelector('ion-slides');
+        if (htmlslides) htmlslides.slidePrev();
+    };
+    const onNextSlide = () => {
+        const htmlslides = document.querySelector('ion-slides');
+        if (htmlslides) htmlslides.slideNext();
+    };
     return(
         <section>
             <aside className="title_brief_case">
@@ -31,6 +47,7 @@ const BriefCase = () =>{
                             let val_subtraction = 100 - percentage;
                             const data_doughnut = {
                                 labels: [],
+
                                 datasets: [
                                     {
                                         data: [percentage, val_subtraction],
@@ -38,22 +55,9 @@ const BriefCase = () =>{
                                             'rgba(65, 207, 105, 1)',
                                             'rgba(88, 80, 107, 0.49)',
                                         ],
-                                        borderWidth: 0,
+                                        borderWidth: 0
                                     },
-                                ],
-                                options: {
-                                    cutoutPercentage: 88,
-                                    animation: {
-                                        animationRotate: true,
-                                        duration: 2000
-                                    },
-                                    legend: {
-                                        display: false
-                                    },
-                                    tooltips: {
-                                        enabled: false
-                                    }
-                                }
+                                ]
                             };
                             return(
                                 <IonSlide key={key} className="slider_brief_case">
@@ -70,7 +74,7 @@ const BriefCase = () =>{
                                                     {list_briefcase.cant_funds} Fondos
                                                 </li>
                                                 <li>
-                                                    <Doughnut className="graphic" data={data_doughnut}  type="doughnut" />
+                                                    <Doughnut options={options_graphic} className="graphic_briefcase" data={data_doughnut}  type="doughnut" />
                                                 </li>
                                             </IonCol>
                                             <IonCol size="6" >
@@ -96,7 +100,7 @@ const BriefCase = () =>{
                                                     {
                                                         list_briefcase.type_active.map((type,key)=>{
                                                             return(
-                                                                <span>
+                                                                <span key={key}>
                                                                     {type.title}
                                                                 </span>
                                                             )
@@ -104,18 +108,22 @@ const BriefCase = () =>{
                                                     }
                                                 </li>
                                                 <li>
-                                                    <img src="/assets/icon/previous.svg"/>
-                                                    <img src="/assets/icon/next.svg"/>
+                                                    <img onClick={onPrevSlide} src="/assets/icon/previous.svg"/>
+                                                    <img onClick={onNextSlide} src="/assets/icon/next.svg"/>
                                                 </li>
                                             </IonCol>
                                         </IonRow>
                                     </IonGrid>
-
                                 </IonSlide>
                             )
                         })
                     }
                 </IonSlides>
+                <p>
+                    {
+                       DataBriefCase.detail_briefcase
+                    }
+                </p>
             </aside>
         </section>
     )
