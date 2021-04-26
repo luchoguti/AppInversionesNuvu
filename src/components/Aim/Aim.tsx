@@ -1,5 +1,7 @@
 import './Aim.css';
 import DataIam from "../../data/aim.json";
+import {formatNumber} from '../../utils/Utils';
+
 import React from "react";
 import {IonCol, IonGrid, IonRow } from '@ionic/react';
 import { Doughnut } from 'react-chartjs-2';
@@ -27,7 +29,6 @@ const Aim = () =>{
                                 labels: [],
                                 datasets: [
                                     {
-                                        label: '# of Votes',
                                         data: [percentage, val_subtraction],
                                         backgroundColor: [
                                             'rgba(84, 209, 237, 1)',
@@ -65,10 +66,10 @@ const Aim = () =>{
                                         </span>
                                         <span>
                                             <label>
-                                                <b>${data_list.value_aim}</b>
+                                                <b>${formatNumber(data_list.value_aim)}</b>
                                             </label>
                                             <label>
-                                                ${data_list.value_aim_percentage}
+                                                ${formatNumber(data_list.value_aim_percentage)}
                                             </label>
                                         </span>
                                     </p>

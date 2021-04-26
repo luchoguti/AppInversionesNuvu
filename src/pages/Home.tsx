@@ -4,6 +4,7 @@ import MenuContainer from "../components/Menu/MenuContainer";
 import React from "react";
 import UserInfoBank from "../components/UserInfoBank/UserInfoBank";
 import Aim from "../components/Aim/Aim";
+import BriefCase from "../components/BriefCase/BriefCase";
 
 const Home: React.FC = () => {
   return (
@@ -13,9 +14,12 @@ const Home: React.FC = () => {
         </style>
       <IonContent color="dark">
           <UserInfoBank/>
-          <MenuContainer />
           <Aim/>
+          <BriefCase/>
       </IonContent>
+      <IonFooter className="ion-no-border">
+          <MenuContainer/>
+      </IonFooter>
     </IonPage>
   );
 };

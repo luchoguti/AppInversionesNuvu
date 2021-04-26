@@ -1,10 +1,8 @@
 import './UseInfoBank.css';
 import DataComponent from "../../data/information_bank.json";
+import {formatNumber} from '../../utils/Utils';
 import React from "react";
 
-const formatNumber = (num:any) =>{
-    return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
-}
 const UserInfoBank = () => {
     return (
         <section>
