@@ -1,7 +1,7 @@
 import "./TipsSaving.css";
 import React from "react";
 import DataTips from "../../data/tips_saving.json";
-import {IonSlide, IonSlides} from "@ionic/react";
+import {IonCol, IonGrid, IonRow, IonSlide, IonSlides} from "@ionic/react";
 
 const TipsSaving = ()=>{
     const slideOpts = {
@@ -10,53 +10,59 @@ const TipsSaving = ()=>{
     };
     return(
         <section>
-            <aside>
+            <aside className="title_tip_saving">
                 <b>Los Puntos del ahorro</b>
             </aside>
-            <aside>
+            <aside className="list_tip_saving">
                 <IonSlides pager={true} options={slideOpts}>
                     {
                         DataTips.tip_saving.map((list_tips_saving,key)=>{
                             return(
                                 <IonSlide key={key}>
-                                    <img src={list_tips_saving.img}/>
-                                    <img src="/assets/icon/play_circle.svg" />
-                                    <img src="/assets/icon/img_tips_saving.png" />
-                                    <p>
-                                        <h3>
-                                            {list_tips_saving.title}
-                                        </h3>
-                                    </p>
-                                    <p>
-                                        <h6>
-                                            {list_tips_saving.details}
-                                        </h6>
-                                    </p>
+                                    <ul>
+                                        <li>
+                                            <img src={list_tips_saving.img}/>
+                                            <img src="/assets/icon/play_circle.svg" />
+                                            <img src="/assets/icon/img_tips_saving.png" />
+                                        </li>
+                                        <li>
+                                            <h3>
+                                                <b>{list_tips_saving.title}</b>
+                                            </h3>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                {list_tips_saving.details}
+                                            </h6>
+                                        </li>
+                                    </ul>
                                 </IonSlide>
                             )
                         })
                     }
                 </IonSlides>
             </aside>
-            <aside>
+            <aside className="list_tips_specific">
                 {
                     DataTips.list_tips_specific.map((list_tips_specific,key)=>{
                         return(
-                            <ul key={key}>
-                                <li>
-                                    <div>
+                            <IonGrid key={key}>
+                                <IonRow>
+                                    <IonCol size="9">
                                         <p>
                                             {list_tips_specific.title}
                                         </p>
                                         <p>
                                             {list_tips_specific.detail}
                                         </p>
-                                    </div>
-                                    <div>
-                                        <img src={list_tips_specific.img}/>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </IonCol>
+                                    <IonCol size="3">
+                                        <div className="img_tips_specific">
+                                            <img src={list_tips_specific.img}/>
+                                        </div>
+                                    </IonCol>
+                                </IonRow>
+                            </IonGrid>
                         )
                     })
                 }
