@@ -12,7 +12,7 @@ const Aim = () =>{
                     <b>Tus Metas</b>
                 </div>
                 <div>
-                    <img src="/assets/icon/notifications.svg"/>
+                    <img src="/assets/icon/add_aim.svg"/>
                 </div>
             </aside>
             <IonGrid className="list_aim">
@@ -81,5 +81,4 @@ const Aim = () =>{
         </section>
     )
 }
-
 export default Aim;
