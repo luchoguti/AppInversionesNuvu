@@ -30,6 +30,11 @@
 .detail_aim p:nth-child(3) span:nth-child(2) label:nth-child(1){
     color:#54D1ED;
 }
+.detail_aim p:nth-child(3) span:nth-child(2) label{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+}
 .graphic{
     height: 69px !important;
     width: 105.2px !important;

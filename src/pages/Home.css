@@ -19,6 +19,7 @@ ion-footer{
     border-radius: 16px;
     background-color: white;
     z-index: 1;
+    margin-top: 36px;
 }
 .ion-page{
     background: #F8F8FC;
