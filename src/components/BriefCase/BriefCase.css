@@ -71,3 +71,13 @@
 .details_brief_case .swiper-pagination {
     display: none;
 }
+aside div:last-child a {
+    background: #E4FFEE;
+    border: 0.5px solid #41CF69;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #41CF69;
+    padding: 3px 8px;
+    font-size: 11px;
+}
