@@ -1,27 +1,32 @@
 import './UseInfoBank.css';
 import DataComponent from "../../data/information_bank.json";
+import {formatNumber} from '../../utils/Utils';
 import React from "react";
 
-interface ContainerProps { }
-
-const UserInfoBank: React.FC<ContainerProps> = () => {
+const UserInfoBank = () => {
     return (
         <section>
-            <div>
+            <div className="title_user">
                 <div>
-                    Hola {DataComponent.name_user}
+                    <span>Hola {DataComponent.name_user}</span>
                 </div>
                 <div>
-
+                    <img src="/assets/icon/notifications.svg"/>
                 </div>
             </div>
             <div className="invest_card">
-                <p>
-                    Tu salado
-                </p>
-                <p>
-                    ${DataComponent.balance}
-                </p>
+                <aside>
+                    <span>Eres estratega</span>
+                    <img src="/assets/icon/invest_card.png"/>
+                    </aside>
+                <aside>
+                    <p>
+                        Tu saldo
+                    </p>
+                    <p id="invest_card_balance">
+                        ${formatNumber(DataComponent.balance)}
+                    </p>
+                </aside>
             </div>
             <div className="invest_summer">
                 <li>
@@ -29,7 +34,8 @@ const UserInfoBank: React.FC<ContainerProps> = () => {
                         Inversión
                     </div>
                     <div>
-                        ${DataComponent.investment}
+                        <b>${formatNumber(DataComponent.investment)}</b>
+
                     </div>
                 </li>
                 <li>
@@ -37,7 +43,7 @@ const UserInfoBank: React.FC<ContainerProps> = () => {
                         Rendimiento
                     </div>
                     <div>
-                        ${DataComponent.performance}
+                        <b>${formatNumber(DataComponent.performance)}</b>
                     </div>
                 </li>
             </div>
@@ -45,3 +51,4 @@ const UserInfoBank: React.FC<ContainerProps> = () => {
     )
 }
 export default UserInfoBank;
+

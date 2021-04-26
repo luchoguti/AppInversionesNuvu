@@ -7,7 +7,14 @@
       "detail_briefcase": "FIC Old Multual Efectivo",
       "value_briefcase": "24000",
       "cant_funds": "10",
-      "type_active": "Renta fija \n Depósito a la fija"
+      "type_active": [
+        {
+          "title":"Renta fija"
+        },
+        {
+          "title": "Depósito a la fija"
+        }
+      ]
     },
     {
       "title": "skandia - two",
@@ -15,8 +22,15 @@
       "percentage_type_active": "40",
       "detail_briefcase": "FIC Old Multual Efectivo",
       "value_briefcase": "56000",
-      "cant_funds": "15",
-      "type_active": "Renta fija \n Depósito de ahorros"
+      "cant_funds": "20",
+      "type_active": [
+        {
+          "title":"Renta fija"
+        },
+        {
+          "title": "Depósito a la fija"
+        }
+      ]
     }
   ],
   "detail_briefcase": "Tu dinero se invierte de la forma más efeciente de acuerdo al perfil de riesgo asignado por nuestro RoboAdvisor."

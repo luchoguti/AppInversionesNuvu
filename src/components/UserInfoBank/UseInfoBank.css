@@ -1,4 +1,65 @@
-section{
-    color: black;
-    padding: 10px;
+.title_user div span{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #58506B;
+}
+.invest_card{
+    background: linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
+    background-blend-mode: multiply, normal;
+    /* Card shadow 1 */
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+    border-radius: 20px;
+    padding: 0 0 5px 19px;
+    color: white;
+    height: 14em;
+    margin-bottom: 23px;
+}
+.invest_card img{
+    position: relative;
+    bottom: 35px;
+}
+.invest_card span{
+    position: relative;
+    top: 62px;
+}
+.invest_card aside:nth-child(1){
+    display: flex;
+    justify-content: space-evenly;
+}
+.invest_card aside:nth-child(2){
+    position: relative;
+    bottom: 41px;
+    padding-left: 19px;
+}
+.invest_card aside:nth-child(2) p:nth-child(1){
+    margin: 0px;
+}
+#invest_card_balance{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    margin: 0px;
+}
+.invest_summer{
+    padding-top: 4px;
+    background-color: white;
+    border-radius: 20px;
+    height: 85px;
+}
+.invest_summer li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 6px 0 6px 0;
+    border-bottom: solid 1px #e2dada;
+    width: 85%;
+    position: relative;
+    left: 23px;
+}
+.invest_summer li:nth-child(1){
+    padding-top: 11px;
+}
+.invest_summer li:nth-child(2){
+    border: white;
 }

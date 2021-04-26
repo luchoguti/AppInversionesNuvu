@@ -10,6 +10,7 @@
     bottom: 23px;
     border-radius: 16px;
     background-color: white;
+    z-index: 1;
 }
 .ellipse_container{
     position: fixed;
@@ -40,10 +41,6 @@
 }
 .menu_options label{
     padding-top: 6px;
-}
-label{
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 14px;
