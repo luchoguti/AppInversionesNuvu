@@ -5,6 +5,7 @@ import React from "react";
 import UserInfoBank from "../components/UserInfoBank/UserInfoBank";
 import Aim from "../components/Aim/Aim";
 import BriefCase from "../components/BriefCase/BriefCase";
+import TipsSaving from "../components/TipsSaving/TipsSaving";
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
           <UserInfoBank/>
           <Aim/>
           <BriefCase/>
+          <TipsSaving/>
       </IonContent>
       <IonFooter className="ion-no-border">
           <MenuContainer/>

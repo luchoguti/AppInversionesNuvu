@@ -29,7 +29,7 @@
     background-color: #41CF69;
     color: white;
     border-radius: 24px;
-    padding: 1px 8px;
+    padding: 1px 7px;
 }
 .slider_brief_case ion-col:nth-child(2) li:nth-child(1) span img{
     position: relative;
@@ -70,4 +70,14 @@
 }
 .details_brief_case .swiper-pagination {
     display: none;
+}
+aside div:last-child a {
+    background: #E4FFEE;
+    border: 0.5px solid #41CF69;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #41CF69;
+    padding: 3px 8px;
+    font-size: 11px;
 }
