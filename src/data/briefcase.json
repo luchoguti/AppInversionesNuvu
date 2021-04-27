@@ -1,0 +1,53 @@
+{
+  "briefcase": [
+    {
+      "title": "skandia",
+      "icon": "/assets/icon/icon_briefcase.png",
+      "percentage_type_active": "15",
+      "detail_briefcase": "FIC Old Multual Efectivo",
+      "value_briefcase": "24000",
+      "cant_funds": "10",
+      "type_active": [
+        {
+          "title":"Renta fija"
+        },
+        {
+          "title": "Depósito a la fija"
+        }
+      ]
+    },
+    {
+      "title": "skandia - two",
+      "icon": "/assets/icon/icon_briefcase.png",
+      "percentage_type_active": "40",
+      "detail_briefcase": "FIC Old Multual Efectivo",
+      "value_briefcase": "56000",
+      "cant_funds": "20",
+      "type_active": [
+        {
+          "title":"Renta fija"
+        },
+        {
+          "title": "Depósito a la fija"
+        }
+      ]
+    },
+    {
+      "title": "skandia - three",
+      "icon": "/assets/icon/icon_briefcase.png",
+      "percentage_type_active": "29",
+      "detail_briefcase": "FIC Old Multual Efectivo",
+      "value_briefcase": "90000",
+      "cant_funds": "38",
+      "type_active": [
+        {
+          "title":"Renta fija"
+        },
+        {
+          "title": "Depósito a la fija"
+        }
+      ]
+    }
+  ],
+  "detail_briefcase": "Tu dinero se invierte de la forma más efeciente de acuerdo al perfil de riesgo asignado por nuestro RoboAdvisor."
+}

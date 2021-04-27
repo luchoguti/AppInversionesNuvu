@@ -1,0 +1,26 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+section{
+    color: black;
+    padding: 17px;
+}
+.title_user, .title_aim, .title_brief_case{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 32px 0;
+}
+ion-footer{
+    width: 93%;
+    height: 60px;
+    left: 14px;
+    bottom: 23px;
+    border-radius: 16px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 36px;
+}
+.ion-page{
+    background: #F8F8FC;
+}

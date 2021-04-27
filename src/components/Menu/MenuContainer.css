@@ -1,0 +1,51 @@
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.rectangle_container{
+    position: fixed;
+    width: 93%;
+    height: 60px;
+    left: 14px;
+    bottom: 23px;
+    border-radius: 16px;
+    background-color: white;
+    z-index: 1;
+}
+.ellipse_container{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 52px;
+    border-radius: 29px;
+    background-color: white;
+}
+.menu_invest{
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
+.menu_options{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: 9px;
+    justify-content: space-around;
+}
+.menu_options a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu_options label{
+    padding-top: 6px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #A99DC6;
+}
+.label_active {
+    color: #54D1ED;
+}
